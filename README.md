@@ -29,3 +29,21 @@ dataset (companion repo: **nse-data-pipeline**).
 ---
 *Showcase project demonstrating quant-research methodology. I build backtests that tell you the
 truth about a strategy — including when it doesn't work.*
+
+## This harness has a body of work: a strategy it killed
+
+This repo does not just claim research discipline - it executed it, once, for real:
+
+1. SLEEVE_HELDOUT_PREREG.md - the contract, locked BEFORE the test: frozen strategy
+   spec, sealed data window, three numeric gates, both outcomes pre-written.
+2. H14_AMENDMENT_A2_DATA_REPAIR.md - a 76-day data repair done before the look,
+   from official NSE sources, with zero performance computed during repair.
+3. run_heldout_a1.py - the one-shot runner: refuses to run twice, hashes its own
+   code, writes a tamper-evident result file.
+4. heldout_a1_result_*.txt - the verdict. Sharpe 1.04 (PASS), max drawdown -21%
+   (PASS), excess vs its own equal-weight universe -4.79%/yr (FAIL) -> REJECT.
+   The locked rule required all three gates. The strategy died. The Sharpe looked
+   great - the benchmark gate caught that it was market beta in costume.
+
+Most backtest repos show winners. This one shows the machinery that prevents
+fooling yourself - which is the actual hard problem.
