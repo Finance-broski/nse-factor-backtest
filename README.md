@@ -26,10 +26,6 @@ documented honestly.
 Python · pandas · NumPy · SciPy. Built on a survivorship-free, corporate-action-adjusted NSE
 dataset (companion repo: **nse-data-pipeline**).
 
----
-*Showcase project demonstrating quant-research methodology. I build backtests that tell you the
-truth about a strategy — including when it doesn't work.*
-
 ## This harness has a body of work: a strategy it killed
 
 This repo does not just claim research discipline - it executed it, once, for real:
@@ -47,3 +43,7 @@ This repo does not just claim research discipline - it executed it, once, for re
 
 Most backtest repos show winners. This one shows the machinery that prevents
 fooling yourself - which is the actual hard problem.
+
+---
+*Showcase project demonstrating quant-research methodology. I build backtests that tell you the
+truth about a strategy — including when it doesn't work.*
