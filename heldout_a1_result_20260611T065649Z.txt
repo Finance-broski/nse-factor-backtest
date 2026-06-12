@@ -1,0 +1,11 @@
+H14 ONE-SHOT HELD-OUT (Amendment A1 universe)  |  run 2026-06-11T06:56:46.034195+00:00  |  code 9f77d74a8e21da0a
+window: HELD-OUT (spent once) 2023-01-01..2100-01-01  cost=30bps  exclusions applied=55
+=== H14 INTEGRATED (no-ETF) [HELD-OUT — BINDING] ===
+  months=41 ann_ret=16.14% ann_vol=15.45% net_Sharpe= 1.04 t=1.93 maxDD=-21.27% hit= 73% turn= 30% PSR= 95% excess=-4.79%
+GATE 1 net Sharpe >= 0.50:       PASS (1.04)
+GATE 2 excess vs universe > 0:   FAIL (-4.79%/yr)
+GATE 3 maxDD no worse than -35%: PASS (-21.3%)
+VERDICT (locked rule, ALL three gates): REJECT — the equity program concludes; no re-tunes, no second window
+BLEND reference (gates NOTHING): net_Sharpe=1.03  maxDD=-21.4%
+
+This file is the one-shot record. Deleting it to rerun voids the test.
